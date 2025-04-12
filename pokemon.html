@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Who's That Pokémon?</title>
+    <link rel="stylesheet" href="pokemon.css">
+    <!-- Corrected the CSS link tag -->
+</head>
+
+<body>
+    <h2>Who's That Pokémon? (Guess from Silhouette)</h2>
+    <label for="gen-select">Select Generation:</label>
+    <select id="gen-select">
+    <option value="">Select Generation</option>
+    <option value="1">Gen 1 - Kanto</option>
+    <option value="2">Gen 2 - Johto</option>
+    <option value="3">Gen 3 - Hoenn</option>
+    <option value="4">Gen 4 - Sinnoh</option>
+    <option value="5">Gen 5 - Unova</option>
+    <option value="6">Gen 6 - Kalos</option>
+    <option value="7">Gen 7 - Alola</option>
+    <option value="8">Gen 8 - Galar</option>
+    <option value="9">Gen 9 - Paldea</option>
+  </select>
+
+    <button id="start-btn">Start Game</button>
+
+    <div id="game-area">
+        <p><strong>Time left:</strong> <span id="timer">60</span>s</p>
+        <img id="pokemon-img" src="" alt="Who's That Pokémon?" />
+        <br />
+        <input id="guess-input" type="text" placeholder="Enter Pokémon name" />
+        <button id="guess-btn">Guess</button>
+        <button id="skip">Skip</button>
+        <p id="feedback"></p>
+        <p><strong>Score:</strong> <span id="score">0</span></p>
+    </div>
+
+    <script src="pokemon_index.js"></script>
+</body>
+
+</html>

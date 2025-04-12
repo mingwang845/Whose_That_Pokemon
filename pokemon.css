@@ -1,0 +1,122 @@
+/* Apply a full-screen layout to the body */
+
+body,
+html {
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    height: 100%;
+    /* Ensure the body takes the full height of the screen */
+    display: flex;
+    /* Use Flexbox layout */
+    flex-direction: column;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    font-family: Arial, sans-serif;
+    /* Optional, for better typography */
+    background-color: #f0f0f0;
+    /* Optional, background color */
+}
+
+
+/* Center all the content inside the 'game-area' div */
+
+#game-area {
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center horizontally inside game area */
+    text-align: center;
+    /* Center the text inside the elements */
+    width: 100%;
+    /* Make sure it fits within the viewport */
+    max-width: 600px;
+    /* Optional, set max width for content */
+    padding: 20px;
+    background-color: white;
+    /* Optional, background color */
+    border-radius: 8px;
+    /* Optional, rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional, shadow for visual appeal */
+}
+
+
+/* Style for the game feedback text */
+
+#feedback {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Style for the score text */
+
+#score {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Style for the timer text */
+
+#timer {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Style for the Pokémon image */
+
+#pokemon-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+
+/* Style for the input field and buttons */
+
+input,
+button {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 200px;
+    /* Optional, limits input width */
+}
+
+
+/* Style for the select dropdown */
+
+#gen-select {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px;
+    /* Optional, limits dropdown width */
+}
+
+
+/* Style for the start button */
+
+#start-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-btn:hover {
+    background-color: #45a049;
+}
