@@ -60,6 +60,7 @@ function checkGuess() {
         }, 1000); // 1 second delay
     } else {
         document.getElementById('feedback').innerText = 'Incorrect, try again!';
+        img.style.filter = 'brightness(0) contrast(100%)'; 
     }
 
     document.getElementById('guess-input').value = '';
